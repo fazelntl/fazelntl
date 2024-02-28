@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laudo Game</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body
+    class="bg-gradient-to-br from-orange-600 to-orange-950 h-[100vh] px-44 py-14"
+  >
+    <!-- parrent class of all  -->
+    <div class="grid grid-cols-2 relative">
+      <!-- functional buttons -->
+      <div
+        class="absolute top-5 w-full flex flex-col items-center justify-center gap-[280px]"
+      >
+        <button class="bg-white rounded-full px-10 py-2 NGM">New Game</button>
+        <div class="flex flex-col gap-4">
+          <button class="bg-white rounded-full px-10 py-2 RLD">
+            Roll Dice
+          </button>
+          <button class="bg-white rounded-full px-10 py-2 HLD">Hold</button>
+        </div>
+        <div class="absolute">
+          <img
+            src="dice-1.png"
+            alt=""
+            class="dice hidden"
+            style="height: 100px"
+          />
+        </div>
+      </div>
+
+      <!-- End of functional buttons -->
+      <!-- the left -->
+      <div
+        class="col-span-1 flex flex-col justify-center items-center gap-28 py-20 bg-gray-700 text-white font-bold px-2 text-center rounded-l-2xl"
+      >
+        <div class="flex flex-col gap-10">
+          <h1 class="pl1 text-4xl">PLAYER 1</h1>
+          <div class="scorep1 text-7xl">0</div>
+        </div>
+        <div
+          class="bg-gray-500 rounded-xl flex flex-col px-10 py-2 gap-4 justify-center items-center"
+        >
+          <h1>Current score</h1>
+          <div class="curscrp1 text-2xl">0</div>
+        </div>
+      </div>
+
+      <!-- the right one -->
+      <div
+        class="col-span-1 flex flex-col justify-center items-center gap-28 py-20 bg-gray-800 text-white font-bold px-2 text-center rounded-r-2xl"
+      >
+        <div class="flex flex-col gap-10">
+          <h1 class="pl2 text-4xl">PLAYER 2</h1>
+          <div class="scorep2 text-7xl">0</div>
+        </div>
+        <div
+          class="bg-gray-500 rounded-xl flex flex-col px-10 py-2 gap-4 justify-center items-center"
+        >
+          <h1>Current score</h1>
+          <div class="curscrp2 text-2xl">0</div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
