@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="output.css" />
   </head>
   <body
-    class="bg-gradient-to-br from-orange-600 to-orange-950 h-[100vh] px-44 py-14"
+    class="bg-gradient-to-br from-orange-600 to-orange-950 h-[100vh] px-28 py-14"
   >
     <!-- parrent class of all  -->
     <div class="grid grid-cols-2 relative">
@@ -15,12 +15,17 @@
       <div
         class="absolute top-5 w-full flex flex-col items-center justify-center gap-[280px]"
       >
-        <button class="bg-white rounded-full px-10 py-2 NGM">New Game</button>
+        <button class="bg-white rounded-full px-10 py-2 ngm">New Game</button>
         <div class="flex flex-col gap-4">
-          <button class="bg-white rounded-full px-10 py-2 RLD">
+          <!-- <button class="bg-white rounded-full px-10 py-2 rld">
             Roll Dice
-          </button>
-          <button class="bg-white rounded-full px-10 py-2 HLD">Hold</button>
+          </button> -->
+          <div class="bg-white rounded-full px-10 py-2 rmdic">
+            Remaining Tries
+          </div>
+          <div class="diceinfo bg-white rounded-full px-10 py-2 text-center">
+            0
+          </div>
         </div>
         <div class="absolute">
           <img
@@ -33,38 +38,45 @@
       </div>
 
       <!-- End of functional buttons -->
+
       <!-- the left -->
       <div
-        class="col-span-1 flex flex-col justify-center items-center gap-28 py-20 bg-gray-700 text-white font-bold px-2 text-center rounded-l-2xl"
+        class="pa col-span-1 flex flex-col justify-center items-center gap-28 py-20 bg-gray-700 text-white font-bold px-2 text-center rounded-l-2xl"
       >
         <div class="flex flex-col gap-10">
           <h1 class="pl1 text-4xl">PLAYER 1</h1>
           <div class="scorep1 text-7xl">0</div>
+          <div class="mspa text-3xl hidden">Winner 🤗</div>
         </div>
         <div
-          class="bg-gray-500 rounded-xl flex flex-col px-10 py-2 gap-4 justify-center items-center"
+          class="rounded-xl flex flex-col px-10 py-2 gap-4 justify-center items-center"
+        ></div>
+        <button
+          class="bg-gray-800 border-2 border-gray-500 rounded-full px-10 py-2 rlda animate-bounce hover:animate-none"
         >
-          <h1>Current score</h1>
-          <div class="curscrp1 text-2xl">0</div>
-        </div>
+          Roll Dice
+        </button>
       </div>
 
       <!-- the right one -->
       <div
-        class="col-span-1 flex flex-col justify-center items-center gap-28 py-20 bg-gray-800 text-white font-bold px-2 text-center rounded-r-2xl"
+        class="pb col-span-1 flex flex-col justify-center items-center gap-28 py-20 bg-gray-800 text-white font-bold px-2 text-center rounded-r-2xl"
       >
         <div class="flex flex-col gap-10">
           <h1 class="pl2 text-4xl">PLAYER 2</h1>
           <div class="scorep2 text-7xl">0</div>
+          <div class="mspb text-3xl hidden">Winner 🤗</div>
         </div>
         <div
-          class="bg-gray-500 rounded-xl flex flex-col px-10 py-2 gap-4 justify-center items-center"
+          class="rounded-xl flex flex-col px-10 py-2 gap-4 justify-center items-center"
+        ></div>
+        <button
+          class="bg-gray-800 border-2 border-gray-500 rounded-full px-10 py-2 rldb animate-bounce hover:animate-none"
         >
-          <h1>Current score</h1>
-          <div class="curscrp2 text-2xl">0</div>
-        </div>
+          Roll Dice
+        </button>
       </div>
     </div>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
